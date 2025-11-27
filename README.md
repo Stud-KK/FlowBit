@@ -1,15 +1,23 @@
-# Flowbit Pokédex (Java)
+Perfect — this README is **already solid and professional**, but if you’re submitting it to the HR team now, a few **small improvements** will make it even cleaner, clearer, and easier for reviewers to understand quickly. Here's my suggested polished version:
 
-A compact Spring Boot application that exposes a cached Pokémon search API and a rich single-page UI. The service fetches data from [PokeAPI](https://pokeapi.co/) once and serves repeated queries from an in-memory Caffeine cache with TTL and max-size eviction.
+---
 
-## Stack
+# **Lowbit Pokédex (Java)**
 
-- Java 17 + Spring Boot 3
-- WebClient for calling PokeAPI
-- Spring Cache + Caffeine (10‑minute TTL, 200 entries)
-- Vanilla HTML/CSS/JS UI served via static resources
+A compact **Spring Boot** application that exposes a **cached Pokémon search API** and a **rich single-page UI**. The service fetches data from [PokeAPI](https://pokeapi.co/) once and serves repeated queries from an **in-memory Caffeine cache** with TTL and max-size eviction.
 
-## Project layout
+---
+
+## **Stack**
+
+* Java 17 + Spring Boot 3
+* Spring WebClient for calling PokeAPI
+* Spring Cache + Caffeine (10-minute TTL, 200 entries)
+* Vanilla HTML/CSS/JS UI served via static resources
+
+---
+
+## **Project Layout**
 
 ```
 apps/pokedex-java
@@ -26,24 +34,38 @@ apps/pokedex-java
    └─ static/ (index.html, styles.css, app.js)
 ```
 
-## Running locally
+---
+
+## **Running Locally**
+
+1. Navigate to project folder:
 
 ```bash
 cd apps/pokedex-java
+```
+
+2. Run the application:
+
+```bash
 mvn spring-boot:run
 ```
 
-Then open http://localhost:8085 to use the UI. The API is available at http://localhost:8085/api/pokemon?name=pikachu.
+3. Open the UI: [http://localhost:8085](http://localhost:8085)
+   API endpoint: `http://localhost:8085/api/pokemon?name=pikachu`
 
-## REST API
+> **Note:** Ensure `JAVA_HOME` is set (e.g., `C:\Program Files\Java\jdk-17`) if required.
 
-`GET /api/pokemon?name=<pokemon-name>`
+---
 
-**Query params**
+## **REST API**
 
-- `name` – required, alphanumeric/dash (validated)
+**Endpoint:** `GET /api/pokemon?name=<pokemon-name>`
 
-**Response**
+**Query Parameters:**
+
+* `name` – required, alphanumeric/dash (validated)
+
+**Sample Response:**
 
 ```json
 {
@@ -67,41 +89,54 @@ Then open http://localhost:8085 to use the UI. The API is available at http://lo
 }
 ```
 
-Errors are returned with standard HTTP status codes and JSON payloads.
+**Error Handling:**
+Standard HTTP status codes with JSON payloads.
 
-## Caching strategy
+---
 
-- In-memory Caffeine cache named `pokemon`
-- Up to 200 unique Pokémon kept
-- Entries expire 10 minutes after write
-- Cache key uses lowercase name to avoid duplicates from casing differences
+## **Caching Strategy**
 
-## Documentation
+* In-memory **Caffeine cache** named `pokemon`
+* **Max 200 unique Pokémon**
+* Entries expire **10 minutes** after write
+* **Cache key** uses lowercase Pokémon names to avoid duplicates from casing differences
 
-- **WORKFLOW.md** - Detailed architecture and request flow explanation
-- **TESTING_GUIDE.md** - Comprehensive testing guide with expected outputs
+---
 
-## Testing
+## **Documentation**
 
-```bash
-mvn test
+* `WORKFLOW.md` – Detailed architecture and request flow
+* `TESTING_GUIDE.md` – Testing instructions with expected outputs
+
+---
+
+---
+
+## **Quick Start**
+
+Set `JAVA_HOME` if needed:
+
+```powershell
+$env:JAVA_HOME = "C:\Program Files\Java\jdk-17"
 ```
 
-For detailed testing instructions and expected outputs, see [TESTING_GUIDE.md](./TESTING_GUIDE.md).
+Run:
 
-## Quick Start
+```powershell
+.\mvnw.cmd spring-boot:run
+```
 
-1. **Set JAVA_HOME** (if needed):
-   ```powershell
-   $env:JAVA_HOME = "C:\Program Files\Java\jdk-24"
-   ```
+Access:
 
-2. **Run the application**:
-   ```powershell
-   .\mvnw.cmd spring-boot:run
-   ```
+* Frontend: [http://localhost:8085](http://localhost:8085)
+* API: `http://localhost:8085/api/pokemon?name=pikachu`
 
-3. **Access**:
-   - Frontend: http://localhost:8085
-   - API: http://localhost:8085/api/pokemon?name=pikachu
+---
 
+✅ **Tip:** Include screenshots of the UI in the repo to make it visually appealing for the reviewer.
+
+---
+
+If you want, I can also **draft the exact email text** to submit your GitHub repo **right now**, politely apologizing for the delay. That way, you can send it immediately and look professional.
+
+Do you want me to do that?
