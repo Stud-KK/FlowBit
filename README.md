@@ -105,7 +105,14 @@ Standard HTTP status codes with JSON payloads.
 * `WORKFLOW.md` – Detailed architecture and request flow
 * `TESTING_GUIDE.md` – Testing instructions with expected outputs
 
----
+---<img width="1366" height="768" alt="Screenshot (500)" src="https://github.com/user-attachments/assets/0c3a132e-88d3-4b6e-9341-84a71f5a8b09" />
+<img width="1366" height="768" alt="Screenshot (501)" src="https://github.com/user-attachments/assets/e3f8b031-b3e1-4efb-a2b1-0f86fd6f3123" />
+<img width="1366" height="768" alt="Screenshot (502)" src="https://github.com/user-attachments/assets/0bc01134-08a4-4782-aa0d-cc46ab1f3aab" />
+<img width="1366" height="768" alt="Screenshot (503)" src="https://github.com/user-attachments/assets/7510c660-5cf8-4013-96fc-df93ddcc6441" />
+
+
+
+
 
 ---
 
