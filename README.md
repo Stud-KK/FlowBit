@@ -135,12 +135,3 @@ Access:
 * Frontend: [http://localhost:8085](http://localhost:8085)
 * API: `http://localhost:8085/api/pokemon?name=pikachu`
 
----
-
-✅ **Tip:** Include screenshots of the UI in the repo to make it visually appealing for the reviewer.
-
----
-
-If you want, I can also **draft the exact email text** to submit your GitHub repo **right now**, politely apologizing for the delay. That way, you can send it immediately and look professional.
-
-Do you want me to do that?
