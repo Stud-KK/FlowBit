@@ -105,18 +105,18 @@ Standard HTTP status codes with JSON payloads.
 * `WORKFLOW.md` – Detailed architecture and request flow
 * `TESTING_GUIDE.md` – Testing instructions with expected outputs
 
----<img width="1366" height="768" alt="Screenshot (500)" src="https://github.com/user-attachments/assets/0c3a132e-88d3-4b6e-9341-84a71f5a8b09" />
-<img width="1366" height="768" alt="Screenshot (501)" src="https://github.com/user-attachments/assets/e3f8b031-b3e1-4efb-a2b1-0f86fd6f3123" />
-<img width="1366" height="768" alt="Screenshot (502)" src="https://github.com/user-attachments/assets/0bc01134-08a4-4782-aa0d-cc46ab1f3aab" />
-<img width="1366" height="768" alt="Screenshot (503)" src="https://github.com/user-attachments/assets/7510c660-5cf8-4013-96fc-df93ddcc6441" />
-
-
 
 
 
 ---
 
 ## **Quick Start**
+<img width="1366" height="721" alt="Screenshot (500)" src="https://github.com/user-attachments/assets/b4fb24f0-8380-4d9e-bfd7-df312032f421" />
+<img width="1366" height="725" alt="Screenshot (501)" src="https://github.com/user-attachments/assets/4e6f66ca-198e-4e65-a2b5-9df3ab7f355f" />
+
+<img width="1366" height="721" alt="Screenshot (502)" src="https://github.com/user-attachments/assets/b6ca0792-e7fc-4fce-8e41-25e42703a484" />
+<img width="1366" height="717" alt="Screenshot (503)" src="https://github.com/user-attachments/assets/3dd82e80-c05b-4c5c-a657-86415750bf6a" />
+
 
 Set `JAVA_HOME` if needed:
 
