@@ -1,6 +1,3 @@
-Perfect — this README is **already solid and professional**, but if you’re submitting it to the HR team now, a few **small improvements** will make it even cleaner, clearer, and easier for reviewers to understand quickly. Here's my suggested polished version:
-
----
 
 # **Lowbit Pokédex (Java)**
 
