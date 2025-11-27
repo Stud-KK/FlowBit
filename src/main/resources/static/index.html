@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowbit Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="app-shell">
+    <section class="panel search-panel">
+        <h1>Flowbit Pokédex</h1>
+        <p class="subtitle">Search the PokéAPI with a fast cached backend.</p>
+        <form id="search-form" class="search-form">
+            <label for="pokemon-name">Pokémon name</label>
+            <input id="pokemon-name" name="pokemon-name" type="text" placeholder="e.g. pikachu" autocomplete="off" required>
+            <button type="submit">Search</button>
+        </form>
+        <div class="status" id="status"></div>
+    </section>
+    <section class="panel results-panel">
+        <div id="results-placeholder">
+            <p>Try searching for Pikachu, Charizard, or Mewtwo to get started.</p>
+        </div>
+        <article id="pokemon-card" class="pokemon-card hidden">
+            <header>
+                <div>
+                    <p class="pokemon-id" id="pokemon-id"></p>
+                    <h2 id="pokemon-name-display"></h2>
+                    <p class="pokemon-types" id="pokemon-types"></p>
+                </div>
+                <img id="pokemon-image" alt="Pokemon artwork">
+            </header>
+            <section class="stats-grid">
+                <div>
+                    <p>Height</p>
+                    <strong id="pokemon-height"></strong>
+                </div>
+                <div>
+                    <p>Weight</p>
+                    <strong id="pokemon-weight"></strong>
+                </div>
+                <div>
+                    <p>Base EXP</p>
+                    <strong id="pokemon-exp"></strong>
+                </div>
+                <div>
+                    <p>Order</p>
+                    <strong id="pokemon-order"></strong>
+                </div>
+            </section>
+            <section class="detail-section">
+                <h3>Abilities</h3>
+                <ul id="pokemon-abilities"></ul>
+            </section>
+            <section class="detail-section">
+                <h3>Base Stats</h3>
+                <div id="pokemon-stats" class="stat-bars"></div>
+            </section>
+            <section class="detail-section">
+                <h3>Signature Moves</h3>
+                <ul id="pokemon-moves"></ul>
+            </section>
+            <section class="detail-section">
+                <h3>Held Items</h3>
+                <ul id="pokemon-items"></ul>
+            </section>
+        </article>
+    </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
+

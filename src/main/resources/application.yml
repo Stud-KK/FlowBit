@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: pokedex
+  cache:
+    cache-names:
+      - pokemon
+server:
+  port: 8085
+
